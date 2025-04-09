@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="card">
+        <div class="nav">
+          <input
+            class="color-picker"
+            type="color"
+            id="color-input"
+            value="#ff0000"
+          />
+          <select id="color-scheme-select" class="color-scheme-select"></select>
+          <button id="get-color" class="btn-get-color">Get color scheme</button>
+        </div>
+        <div class="columns">
+          <div id="col-1" class="col-1"></div>
+          <div id="col-2" class="col-2"></div>
+          <div id="col-3" class="col-3"></div>
+          <div id="col-4" class="col-4"></div>
+          <div id="col-5" class="col-5"></div>
+        </div>
+        <div class="copy-section">
+          <div id="col-copy-1" class="col-copy">
+            <p>#F55A5A</p>
+          </div>
+          <div id="col-copy-2" class="col-copy">
+            <p>#2B283A</p>
+          </div>
+          <div id="col-copy-3" class="col-copy">
+            <p>#FBF3AB</p>
+          </div>
+          <div id="col-copy-4" class="col-copy">
+            <p>#AAD1B6</p>
+          </div>
+          <div id="col-copy-5" class="col-copy">
+            <p>#A626D3</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

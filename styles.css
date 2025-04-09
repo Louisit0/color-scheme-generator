@@ -1,0 +1,180 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.nav {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 12px 0px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+}
+.columns > div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.copy-section > div:hover {
+  color: royalblue;
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.columns > div:active,
+.copy-section > div:active {
+  transform: scale(1);
+}
+
+.col-1 {
+  width: 100%;
+  background-color: #f55a5a;
+}
+.col-2 {
+  width: 100%;
+  background-color: #2b283a;
+}
+.col-3 {
+  width: 100%;
+  background-color: #fbf3ab;
+}
+.col-4 {
+  width: 100%;
+  background-color: #aad1b6;
+}
+.col-5 {
+  width: 100%;
+  background-color: #a626d3;
+}
+
+.copy:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.copy-section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-copy {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-get-color {
+  background-color: #ededed;
+  font-weight: 500;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 30%;
+}
+.btn-get-color:hover {
+  background-color: #dcdcdc;
+}
+.btn-get-color:active {
+  background-color: #c0c0c0;
+  transform: scale(0.98);
+}
+
+.color-scheme-select {
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 4px 16px;
+  cursor: pointer;
+  width: 50%;
+}
+
+.color-picker {
+  width: 10%;
+  height: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+    height: 50%;
+    padding: 0px 0px 12px 0px;
+  }
+
+  .color-scheme-select,
+  .btn-get-color,
+  .color-picker {
+    width: 100%;
+    height: 42px;
+  }
+
+  .columns {
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .columns > div {
+    height: 100%;
+  }
+
+  .copy-section {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .col-copy {
+    padding: 8px 0;
+  }
+}
